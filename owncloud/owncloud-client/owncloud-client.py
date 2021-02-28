@@ -13,16 +13,17 @@ class subinfo(info.infoclass):
         self.options.dynamic.registerOption("buildVfsWin", False)
         self.options.dynamic.registerOption("enableCrashReporter", False)
 
+
     def setTargets(self):
-        self.versionInfo.setDefaultValues(tarballUrl="https://download.owncloud.com/desktop/stable/owncloudclient-${VERSION}.tar.xz",
-                                          tarballInstallSrc="owncloudclient-${VERSION}",
-                                          gitUrl="[git]https://github.com/owncloud/client")
+        self.versionInfo.setDefaultValues(tarballUrl="https://github.com/Nuked88/client-desktop-owncloud/tarball/master",
+                                          tarballInstallSrc="Nuked88-client-desktop-owncloud-ff0b35b",
+                                          gitUrl="[git]https://github.com/Nuked88/client-desktop-owncloud")
 
         # we don't have that branche yet
         self.svnTargets["2.8"] = self.svnTargets["master"]
 
-        self.description = "ownCloud Desktop Client"
-        self.displayName = "ownCloud"
+        self.description = "ownCloud Desktop Client Mod"
+        self.displayName = "ownCloud Mod"
         self.webpage = "https://owncloud.org"
 
     def setDependencies(self):
